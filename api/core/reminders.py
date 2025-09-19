@@ -3,8 +3,8 @@ from sqlalchemy import or_, and_
 from datetime import datetime
 from typing import List, Tuple
 
-from api.services import models
-from api.core.notifications import get_notification_channel
+from services import models
+from core.notifications import get_notification_channel
 
 def find_users_needing_reminders(db: Session) -> List[Tuple[models.User, models.Alert]]:
     """

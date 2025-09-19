@@ -4,8 +4,8 @@ from sqlalchemy import or_
 from typing import List
 from datetime import datetime, timedelta
 
-from api.services import models, schemas
-from api.services.database import get_db
+from services import models, schemas
+from services.database import get_db
 
 router = APIRouter(
     prefix="/users",

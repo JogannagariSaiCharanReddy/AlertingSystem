@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import List,Optional
 from datetime import datetime
 
-from api.services import models, schemas
-from api.services.database import get_db
-from api.core import reminders
+from services import models, schemas
+from services.database import get_db
+from core import reminders
 router = APIRouter(
     prefix="/admin/alerts",
     tags=["Admin Alerts"],

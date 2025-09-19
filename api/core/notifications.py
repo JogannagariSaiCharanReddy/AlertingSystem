@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from sqlalchemy.orm import Session
-from api.services import models
+from services import models
 
 class NotificationChannel(ABC):
     """Abstract base class for all notification channels."""

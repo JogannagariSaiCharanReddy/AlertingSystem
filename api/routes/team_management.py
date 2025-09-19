@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from api.services import models, schemas
-from api.services.database import get_db
+from services import models, schemas
+from services.database import get_db
 
 router = APIRouter(prefix="/admin/teams", tags=["Admin Team Management"])
 
