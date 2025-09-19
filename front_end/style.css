@@ -1,0 +1,103 @@
+/* style.css */
+
+/* --- Base & Body --- */
+body {
+    color: #EEEEEE;
+    background-color: #222831;
+}
+
+/* --- Main Content Area --- */
+.main .block-container {
+    padding-top: 2rem;
+}
+
+/* --- Sidebar --- */
+[data-testid="stSidebar"] {
+    background-color: #393E46;
+}
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] .stRadio > label {
+    color: #EEEEEE;
+}
+
+/* --- Buttons --- */
+.stButton>button {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
+.stButton>button:hover {
+    background-color: #008f95;
+    color: #FFFFFF;
+}
+
+/* --- Special Button Types --- */
+.stButton>button[kind="primary"] {
+    border: 2px solid #00ADB5;
+    background-color: transparent;
+}
+.stButton>button[kind="primary"]:hover {
+    border-color: #008f95;
+    background-color: rgba(0, 173, 181, 0.1);
+}
+
+/* --- Forms & Inputs --- */
+.stTextInput, .stTextArea, .stSelectbox, .stMultiselect {
+    border-radius: 5px;
+}
+
+/* --- Tabs --- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 24px;
+}
+.stTabs [data-baseweb="tab"] {
+    height: 44px;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0px 15px;
+}
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #393E46;
+}
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+}
+
+/* --- Dataframe --- */
+.stDataFrame {
+    border: 1px solid #393E46;
+    border-radius: 5px;
+}
+
+/* --- Custom Containers & Cards --- */
+.form-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #393E46;
+    border: 1px solid #4a4f58;
+}
+
+.metric-container {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #393E46;
+    text-align: center;
+}
+
+.alert-card {
+    background-color: #393E46;
+    border-left: 5px solid #00ADB5; /* Default INFO color */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.alert-card-WARNING {
+    border-left-color: #f0ad4e;
+}
+
+.alert-card-CRITICAL {
+    border-left-color: #d9534f;
+}
